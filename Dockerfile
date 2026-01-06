@@ -17,7 +17,7 @@ FROM tomcat:10.1-jre17
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy the built WAR file to Tomcat webapps
-COPY --from=build /app/target/ebanking-backend.war /usr/local/tomcat/webapps/ROOT.war
+COPY --from=build /app/target/ebanking-backend.jar /usr/local/tomcat/webapps/ROOT.jar
 
 # Expose your custom port
 EXPOSE 8085
