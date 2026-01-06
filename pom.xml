@@ -15,7 +15,7 @@
     <groupId>org.sid</groupId>
     <artifactId>ebanking-backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <name>ebanking-backend</name>
     <description>E-Banking project with Spring Boot</description>
 
