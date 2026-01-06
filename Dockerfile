@@ -20,7 +20,7 @@ RUN rm -rf /usr/local/tomcat/webapps/*
 COPY --from=build /app/target/ebanking-backend.jar /usr/local/tomcat/webapps/ROOT.jar
 
 # Expose your custom port
-EXPOSE 8085
+EXPOSE 8080
 
 # Configure Tomcat to use port 8085
 RUN sed -i 's/port="8080"/port="8085"/' /usr/local/tomcat/conf/server.xml
